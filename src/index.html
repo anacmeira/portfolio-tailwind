@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Portfólio</title>
+</head>
+<body class="font-main">
+
+  <!-- Header -->
+  <header class="flex flex-row justify-between items-center px-8 lg:px-30 py-9 bg-purple text-white">
+    <div class="flex flex-row gap-4 items-center">
+      <img class="w-12" src="./img/Logo.svg" alt="Foto da logo">
+      <h1 class="text-4xl">Portfólio</h1>
+    </div>
+    <div class="hidden lg:flex lg:flex-row items-center gap-8">
+      <a class="text-2xl hover:text-blue transition duration-200" href="#Hero">Ínicio</a>
+      <a  class="text-2xl hover:text-blue transition duration-200"href="#Projetos">Projetos</a>
+      <a  class="text-2xl text-white bg-secundary px-4 py-2 rounded-2xl hover:bg-blue hover:scale-110 transition duration-200"href="#Contatos">Fale Conosco</a>
+    </div>
+    <div class="size-8 lg:hidden">
+      <img class="w-8" src="./img/Hamburguer.svg" alt="Foto do ícone de hamburguer">
+    </div>
+  </header>
+
+  <!-- Hero -->
+<section id="Hero" class="flex flex-col lg:flex-row-reverse min-h-screen items-center justify-center bg-primary text-black px-6 py-12 lg:px-30 gap-12 lg:gap-30">
+    
+    <div class="w-full lg:w-1/2 flex justify-center">
+      <div class="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden">
+        <img src="./img/FotoAna.png" alt="Imagem da Ana" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <div class="w-full lg:w-1/2 flex flex-col gap-12 max-w-xl">
+      
+      <div class="text-center lg:text-start flex flex-col items-center lg:items-start gap-8">
+        <h2 class="text-4xl sm:text-5xl">Conheça a <span class="text-blue">Ana</span></h2>
+        
+        <div class="flex flex-col gap-4">
+          <h3 class="text-2xl ">Trainee da <span class="text-blue">byron.solutions</span>!</h3>
+          <p class="text-base leading-relaxed text-gray-800">
+            Cursando Engenharia e Trainee na byron. Unindo lógica, 
+            café, linhas de códigos e soluções inteligentes porque, 
+            afinal, somos todos feitos de poeira de estrelas...
+          </p>
+        </div>
+        
+        <button class="text-xl font-semibold text-white bg-secundary px-6 py-3 rounded-2xl hover:bg-blue hover:scale-110 transition duration-200 shadow-md">
+          SAIBA MAIS
+        </button>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 lg:justify-start gap-8">
+        <p class="text-xl ">Nos Contate!</p>
+        <div class="flex flex-row gap-6">
+          <div class="size-10 hover:scale-110 transition-transform">
+            <a href="https://www.instagram.com/meiracriistina?igsh=MW5zdTJvOXVqc2p6ZQ==" target="_blank">
+              <img src="./img/instagram.png" alt="ícone instagram" class="w-full h-full object-contain">
+            </a>
+          </div>
+          <div class="size-10 hover:scale-110 transition-transform"> 
+            <a href="https://www.linkedin.com/in/ana-cristina-meira-334254277" target="_blank">
+              <img src="./img/linkedin.png" alt="ícone linkedin" class="w-full h-full object-contain">
+            </a>
+          </div>
+          <div class="size-10 hover:scale-110 transition-transform">
+            <a href="https://wa.me/qr/TBO543D3HTPXP1" target="_blank">
+              <img src="./img/whatsapp.png" alt="icone whatsApp" class="w-full h-full object-contain">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Últimos Projetos -->
+  <section id="Projetos" class="bg-secundary px-6 py-8 text-black flex flex-col gap-8 lg:gap-16">
+    <h2 class=" text-white lg:text-center font-extrabold text-2xl" >ÚLTIMOS PROJETOS</h2>
+    
+    <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-16 justify-items-center">
+      
+      <!-- Card 1 -->
+      <div class="flex flex-col bg-primary w-full max-w-[380px] rounded-lg p-3 gap-4 drop-shadow-lg">
+        <div class="h-48 rounded-lg overflow-hidden">
+          <img src="./img/Card1.svg" alt="Mini caixa de isopor com alguns componentes" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg">Câmara Fria</h3>
+          <p class="text-base text-gray">Automação & Hardware</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex flex-col bg-primary w-full max-w-[380px] rounded-lg p-3 gap-4 drop-shadow-lg">
+        <div class="h-48 rounded-lg overflow-hidden">
+          <img src="./img/Card2.svg" alt="Página de cadastro estilizada" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg">Gestor De Presença</h3>
+          <p class="text-base text-gray">Sistemas Embarcados & IoT</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex flex-col bg-primary w-full max-w-[380px] rounded-lg p-3 gap-4 drop-shadow-lg">
+        <div class="h-48 rounded-lg overflow-hidden">
+          <img src="./img/Card3.svg" alt="Tela com códigos" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg">Estudos-Python</h3>
+          <p class="text-base text-gray">Lógica de Programação & Algoritmos</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flex flex-col bg-primary w-full max-w-[380px] rounded-lg p-3 gap-4 drop-shadow-lg">
+        <div class="h-48 rounded-lg overflow-hidden">
+          <img src="./img/Card4.svg" alt="Tela inicial de um site com um texto e uma imagem de um astronauta sentado na lua" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg">Portfólio</h3>
+          <p class="text-base text-gray">Desenvolvimento Front-End</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="flex flex-col bg-primary w-full max-w-[380px] rounded-lg p-3 gap-4 drop-shadow-lg">
+        <div class="h-48 rounded-lg overflow-hidden">
+          <img src="./img/Cards5-6.svg" alt="Tela inicial de um site..." class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg">Próximo Projeto...</h3>
+          <p class="text-base text-gray">Em Desenvolvimento</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="flex flex-col bg-primary w-full max-w-[380px] rounded-lg p-3 gap-4 drop-shadow-lg">
+        <div class="h-48 rounded-lg overflow-hidden">
+          <img src="./img/Cards5-6.svg" alt="Tela inicial de um site..." class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h3 class="text-lg">Próximo Projeto...</h3>
+          <p class="text-base text-gray">Em Desenvolvimento</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer id="Contatos" class="bg-purple text-white flex flex-col lg:items-center p-8 gap-16 lg:gap-8">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
+      <div class="flex flex-col items-center gap-3 lg:w-1/3">
+        <div class="size-16">
+          <img src="./img/Logo.svg" alt="Logo do site">
+        </div>
+        <p class="text-xl">Dev por Ana Cristina • DPJ 2026</p>
+      </div>
+      
+      <div class="text-center gap-2 lg:w-1/3">
+        <h3 class="text-2xl">SOBRE MIM</h3>
+        <p class="text-base">
+          Sou fascinada por ficção científica, astronomia e por todas as coisas 
+          que prendem a minha atenção. E sou do tipo que adora conversar sobre 
+          qualquer assunto por houras a fio :)
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:gap-3 items-center">
+      <p class="text-2xl">Desenvolvido por</p>
+      <div class="max-w-[280px]">
+        <img src="./img/Logobyron.svg" alt="Logo da byron.Solutions">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
